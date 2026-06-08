@@ -24,5 +24,8 @@ while continue_work == "Да":
     continue_work = input("Продолжить работу? Да/Нет:")
     if continue_work == "Нет":
         print("Cпасибо за использование калькулятора!")
-    
-            
+    if continue_work != "Да" and continue_work != "Нет":
+        print("Ошибка! Нужно вводить 'Да' или 'Нет'.")
+        continue_work = input("Продолжить работу? Да/Нет:")
+        if continue_work == "Нет":
+            print("Cпасибо за использование калькулятора!")
