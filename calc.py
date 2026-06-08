@@ -16,8 +16,11 @@ elif operation == "-":
 elif operation == "*":
     print("Результат:", num1 * num2)
 
-elif operation == "/":
-    print("Результат:", num1 / num2)
+if operation == "/":
+    if num2 == 0:
+        print("Ошибка! На ноль делить нельзя.")
+    elif operation == "/":
+        print("Результат:", num1 / num2)
 
 else:
     print("Неизвестная операция")
