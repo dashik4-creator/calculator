@@ -1,3 +1,4 @@
+from math_functions import add, subtract, multiply, divide
 continue_work = "Да"
 while continue_work == "Да":
     try:
@@ -9,16 +10,20 @@ while continue_work == "Да":
         num2 = float(input("Введите второе число: "))
     operation = input("Введите операцию (+ - * /): ")
     if operation == "+":
-     print("Результат:", num1 + num2)
+        result = add(num1, num2)
+        print("Результат:", result)
     elif operation == "-":
-        print("Результат:", num1 - num2)
+        result = subtract(num1, num2)
+        print("Результат:", result)
     elif operation == "*":
-        print("Результат:", num1 * num2)
+        result = multiply(num1, num2)
+        print("Результат:", result)
     elif operation == "/":
         if num2 == 0:
             print("Ошибка! На ноль делить нельзя.")
         else:
-            print("Результат:", num1 / num2)
+            result = divide(num1, num2)
+            print("Результат:", result)
     else:
         print("Неизвестная операция")
     continue_work = input("Продолжить работу? Да/Нет:")
