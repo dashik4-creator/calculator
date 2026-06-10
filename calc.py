@@ -1,4 +1,4 @@
-from math_functions import add, subtract, multiply, divide
+from math_functions import add, subtract, multiply, divide, show_menu
 continue_work = "Да"
 history = []
 print(history)
@@ -10,10 +10,7 @@ while continue_work == "Да":
         print("Ошибка! Нужно вводить числа.")
         num1 = float(input("Введите первое число: "))
         num2 = float(input("Введите второе число: "))
-    print("1 - Сложение")
-    print("2 - Вычитание")
-    print("3 - Умножение")
-    print("4 - Деление")
+    show_menu ()
     operation = input("Введите операцию: ")
     if operation == "1":
         result = add(num1, num2)
